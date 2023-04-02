@@ -425,6 +425,7 @@ TEST(block_store_deserialize, valid_deserialize)
     success = block_store_request(bsWrite, id);
     ASSERT_EQ(true, success);
 
+
     // Next write to the block store...
     uint8_t *write_buffer = (uint8_t *) calloc(1, BLOCK_SIZE_BYTES);
     // ASSERT will lead to seg fault, but better than leak I guess?
